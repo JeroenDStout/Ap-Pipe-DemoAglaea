@@ -1,0 +1,28 @@
+{
+  "vars" : [
+  ],
+  "hubs" : [
+  ],
+  "pipes" : [
+    { "tool" : "smartcopy",
+      "paths" : [
+        { "in"  : "{code-bin-dir}/*~version~/Release/Demo Aglaea.exe",
+          "out" : "{dev-dir}/Demo Aglaea {version} Release.exe" }, 
+        { "in"  : "{code-bin-dir}/*~version~/Debug/Demo Aglaea.exe",
+          "out" : "{dev-dir}/Debug/Demo Aglaea {version} Debug.exe" }
+      ]
+    },
+    { "tool" : "smartcopy",
+      "paths" : [
+        { "in"  : "{cur-dir}/demo_aglaea_boot.json",
+          "out" : "{dev-dir}/demo_aglaea_boot.json" }
+      ]
+    },
+    { "tool" : "smartcopy",
+      "paths" : [
+        { "in"  : "{cur-dir}/iris_enum_demo_aglaea.json",
+          "out" : "{dev-dir}/Iris/Connexions/demo_aglaea.json" }
+      ]
+    }
+  ]
+}

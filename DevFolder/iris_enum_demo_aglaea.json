@@ -1,0 +1,6 @@
+{
+    "name" : "dc",
+    "long_name" : "Demo Aglaea",
+    "port" : 3101,
+    "icon" : "web/demo_aglaea_favicon.ico"
+}
